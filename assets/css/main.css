@@ -11,6 +11,8 @@ html {
   }
 }
 
+
+
 html,
 body {
   display: flex;
@@ -128,6 +130,83 @@ img {
   max-width: 100%;
 }
 
+/* custom */
+
+
+.__TODO, .__DONE {
+    margin: 10px 0;
+    padding: 0px 2px;
+}
+
+.__TODO {
+  color: #ff39a3;
+}
+
+.__DONE {
+  color: dodgerblue;
+}
+
+.__IMPORTANT {
+  color: #FDBF3B;
+}
+
+.__LOVE {
+  color: palevioletred;
+}
+
+.__CANCELED {
+  color: slategray;
+}
+.__INPROCESS {
+    color: firebrick;
+}
+.__WAITING {
+  color: hotpink;
+}
+
+.__NOTE {
+  color: seagreen;
+}
+
+
+/* Span STATUS */
+span.__TODO {
+    cursor: pointer;
+    /* display: block; */
+    /* float: left; */
+    margin: -1px 3px 0px 0px;
+}
+    span.__TODO:hover {
+        background: #BABDB6;
+        color: #888888;
+    }
+
+span.__DONE {
+    cursor: pointer;
+    /* display: block; */
+    /* float: left; */
+    margin: -1px 3px 0px 0px;
+}
+    span.__DONE:hover {
+        background: #BABDB6;
+        color: #888888;
+      }
+
+
+
+span.__INPROCESS {
+    cursor: pointer;
+    /* display: block; */
+    /* float: left; */
+    margin: -1px 3px 0px 0px;
+}
+    span.__INPROCESS:hover {
+        background: #BABDB6;
+        color: dodgerblue;
+    }
+
+/* end custom setting */
+
 #svg {
   position: absolute;
   top: 0;
@@ -215,4 +294,5 @@ dt {
   .page {
     padding-bottom: 150px;
   }
+
 }
